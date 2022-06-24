@@ -1,0 +1,135 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue"
+    ,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/* side Nav Style */
+.sidenav{
+    z-index: 2333;
+}
+.sidenav-fixed-part{
+    padding: 20px 0px;
+    color: #F9F6F6;
+    background-color:black !important;
+    
+}
+.sidenav-fixed-part a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: none;
+    position: absolute;
+    top:500px;
+}
+.sidenav-fixed-part a:hover{
+    color: rgb(160, 0, 0);
+}
+.popular{
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    display: none;
+}
+.fa,.fab,.fad,.fal,.far,.fas{
+cursor: pointer;
+}
+.sidenav-fixed-part a{
+    cursor: pointer;
+}
+.sidenav-footer{
+    position: absolute;
+    padding: 20px 10px;
+    bottom: 0px;
+    cursor: pointer;
+    
+}
+.sidenav-footer p{
+    display: none;
+}
+.sidenav-footer .icons i{
+    font-size: 14px !important; 
+    margin-right: 15px;
+    display: none;
+}
+.sidenav-footer .icons i:hover{
+    color: red !important;
+}
+.sidenav-slider{
+    width: 60px;
+     padding: 20px 10px;
+     background-color: white !important;
+}
+.sidenav-slider img{
+    width: 30.5px ;
+    height: 48px;
+}
+/* End Of Side Nav Style */
+
+/* Api Section */
+ .api-content input,.contact input{
+    margin-top: 30px;
+    width: 100% !important;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #F9F6F6;
+    background-color: black !important;
+    color: white !important;
+    /* margin-bottom: 30px; */
+}
+
+.single-div{
+    position: relative;
+    border-radius: 10px;
+    height: 500px;
+    margin-top: 100px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px rgba(0,0,0,.15)!important;
+}
+
+
+
+.single-div img{
+    border-radius: 10px;
+  
+}
+.hover{
+    background-color: violet;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 10px;
+    transition: all 1s;
+    color: rgb(32, 32, 32) !important;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.single-div:hover .hover{
+    top: 0; 
+}
+
+.alert{
+    width: 50% !important;
+    display: block;
+    font-size: 12px !important;
+}
+.input{
+    width: 50% !important;
+}
+button{
+    padding: 10px  30px !important;
+    width: 100px !important;
+    color: #DC3545 !important;
+    background-color: black !important;
+    border: 1px solid #DC3545 !important;
+    border-radius: 5px !important;
+    margin-top: 30px !important;
+    display: block;
+}
+

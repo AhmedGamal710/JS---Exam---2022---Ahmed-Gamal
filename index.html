@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JS Exam - Ahmed Gamal - Fx</title>
+  </head>
+<body>
+<!-- Side Nav section-->
+<section class="sidenav position-fixed vh-100  d-flex flex-row">
+  <div class="sidenav-fixed-part   ">
+  <a class="playing-link link" id="now_playing">Now Playing</a>
+  <a class="popular link" id="popular">Popular</a>
+  <a class="top-rated link" id="top_rated">Top Rated</a>
+  <a class="trending " id="trending">Trending</a>
+  <a class="upcoming link" id="upcoming">Upcoming</a>
+  <a class="contact" href="#contact">Contact Us</a>
+  <div class="sidenav-footer">
+    <div class="icons mb-3">
+      <i class="fab fa-facebook-f  text-white fs-5"></i>
+      <i class="fab fa-twitter  text-white fs-5"></i>
+      <i class="fas fa-basketball-ball  text-white fs-5"></i>
+    </div>
+    <p class="w-75">Copyright-© 2022 All Rights Reserved - AG-Fx.</p>
+  </div>
+  </div>
+  <div class="sidenav-slider  bg-success d-flex flex-column justify-content-between ">    
+    <div class="text-center  "> <img src="images/logo.png" class="slider-img"></div>
+    <div class="   text-center"><i class="fas fa-bars text-dark fs-4 close-icon click" id="open-icon"></i></div>
+    <div class="  text-center">
+      <i class="fas fa-basketball-ball  text-dark fs-6 d-block mb-3"></i>
+      <i class="fas fa-share-alt fs-6 text-dark d-block"></i></div>
+  </div>
+</section>
+<!-- Show Api -->
+<section class="api-content container">
+   <div class="search-inputs  d-flex  row justify-content-between m-auto">
+<div class="input">
+  <input type="text" placeholder="get movies by word..." name="moviaName" class="form-control input-search text-center" id="searchApi">
+  <div id="alertMovieInput" class="alert d-none alert-danger" role="alert">
+   <strong class="">Enter Valid Movei Name</strong>
+</div>
+</div>
+<div class="input">
+  <input type="text" placeholder="search..." name="moviaCurrentName" class="form-control input-data text-center input"  id="currentSearchInput">
+  <div id="alertMovieCurrentInput" class="alert d-none alert-danger" role="alert">
+   <strong class="">Enter Valid Movei Name</strong>
+</div>
+</div>
+   </div>
+   <div class="api-divs">
+      <div class="container m-auto">
+      
+        <div class="searchResult  api-divs row" id="searchResult" >
+             
+        </div>
+        <div class="row api-divs" id="api-divs">
+        </div>
+      </div>
+   </div>
+</section>
+<!-- Contact Section -->
+<section class="contact container p-5"  id="contact">
+  <h2 class="text-white">Contact Us...</h2>
+  <div class="d-flex row justify-content-between">
+    <div class="input">
+      <input type="text" placeholder="Enter Your Name" name="NameInput" id="NameInput" class="form-control  text-center">
+      <div id="alertNameInput" class="alert d-none alert-danger" role="alert">
+        <strong class="">Enter Valid Name</strong>
+    </div>
+    </div>
+
+    <div class="input">
+      <input type="text" placeholder="Enter Email" name="NameEmail" class="form-control  text-center" id="NameEmail">
+      <div id="alertEmailInput" class="alert d-none alert-danger" role="alert">
+        <strong class="">Enter Valid Email</strong>
+    </div>
+    </div>
+
+
+    <div class="input">
+      <input type="text" placeholder="Enter Phone Number" name="phoneInput" class="form-control  text-center" id="phoneInput">
+      <div id="alertPhoneInput" class="alert d-none alert-danger" role="alert">
+        <strong class="">Enter Valid Phone Number</strong>
+    </div>
+    </div>
+    <div class="input">
+      <input type="text" placeholder="Enter Age" name="ageInput" class="form-control  text-center" id="ageInput">
+      <div id="alertAgeInput" class="alert d-none alert-danger" role="alert">
+        <strong class="">Enter Valid Age</strong>
+    </div>
+    </div>
+    <div class="input">
+      <input type="text" placeholder="Enter Password" name="passwordInput" class="form-control  text-center" id="passwordInput">
+      <div id="alertPasswordInput" class="alert d-none alert-danger" role="alert">
+        <strong class="">Enter Valid Age that contain (minumam 8 character , at least 1 letter , at Least 1 number</strong>
+    </div>
+    </div>
+    <div class="input">
+      <input type="text" placeholder="ReEnter Password" name="repassInput" class="form-control  text-center" id="repassInput">
+      <div id="alertrePasswordInput" class="alert d-none alert-danger" role="alert">
+        <strong class="">Enter Valid Password</strong>
+    </div>
+    </div>
+  </div>
+  <button class=" submit" id="submit" href="#contact">Submit</button>
+</section>
+       <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/test.js"></script>
+  </body>
+</html>
